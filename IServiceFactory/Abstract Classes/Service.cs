@@ -20,7 +20,7 @@ namespace IA_SearchFactory
             var SearchEngine = CreateEngine();
             var EngineResults = SearchEngine.Search(keyword);
             SetResultsWinner(keyword, EngineResults);
-            return Name.Trim() + ": " + string.Format("{0:N}", EngineResults) + " result" + (EngineResults > 1 ? "s" : string.Empty) + ".";
+            return Name.Trim() + ": " + string.Format("{0:N}", EngineResults) + " result" + (EngineResults > 1 ? "s" : string.Empty) + ". ";
             
         }
         protected void SetResultsWinner(string keyword, int results) {
